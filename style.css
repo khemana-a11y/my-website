@@ -1,0 +1,244 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #efedea;
+}
+
+header {
+    background: linear-gradient(135deg, #9c7e98, #c9b2c4);
+    color: #efedea;
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navLinks {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navLinks a{
+    color: #efedea;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navLinks a:hover {
+    color: #6b2d5c;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Home Page */ 
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(#9c7e98, #c9b2c4);
+    color: #efedea;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+.myGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.myItem{
+    background: #efedea;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #5b4658;
+    transition: all 0.3s ease;
+    border: 1px solid #c9b2c4;
+}
+
+.myItem:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px #5b4658;
+    border-color: #5b4658;
+}
+
+.myItem img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+/* Profile Page */
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skillsItem{
+    background: #efedea;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #5b4658;
+    text-align: center;
+    border: 3px solid #9c7e98;
+    transition: all 0.3s ease;
+}
+
+.skillsItem:hover{
+    border-color: #c9b2c4;
+    box-shadow: 0 10px 25px rgba (59, 130, 246, 0.2);
+    transform: translateY(-8px);
+}
+
+/* Projects Page */
+.projectsGrid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.projectItem{
+    flex: 1 1 300px;
+    max-width: 400px;
+    background: #efedea;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #5b4658;
+    transition: transform 0.3s;
+}
+
+.projectItem:hover{
+    transform: translateY(-10px);
+}
+
+.projectItem img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.projectInfo{
+    padding: 1.5rem;
+}
+
+.projectInfo h2{
+    margin-bottom: 0.5rem;
+}
+
+.projectInfo h3{
+    margin-bottom: 0.1rem;
+}
+
+/* ContactUs Page */
+.contatcForm{
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #c9b2c4;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px #5b4658;
+}
+
+.formBlock{
+    margin-top: 1.5rem;
+}
+
+.formBlock label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.formBlock input,
+.formBlock textarea{
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #5b4658;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.formBlock textarea{
+    min-height: 150px;
+    resize: vertical;
+}
+
+.bttn{
+    background: #9c7e98;
+    color: #efedea;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.bttn:hover{
+    background: #6b2d5c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(180deg, #5b4658, #9c7e98);
+    color: #efedea;
+    margin-top: 4rem;
+}
+
+.footerContent {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.footerNav ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footerNav a{
+    color: #efedea;
+    text-decoration: none;
+}
+
+.footerNav a:hover {
+    color: #6b2d5c;
+}
